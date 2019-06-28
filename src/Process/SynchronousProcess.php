@@ -33,7 +33,7 @@ class SynchronousProcess implements Runnable
         return $this->id;
     }
 
-    public function getPid(): ?int
+    public function getPid(): int
     {
         return $this->getId();
     }

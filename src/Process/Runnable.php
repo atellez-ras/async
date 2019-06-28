@@ -6,7 +6,7 @@ interface Runnable
 {
     public function getId(): int;
 
-    public function getPid(): ?int;
+    public function getPid(): int;
 
     public function start();
 
