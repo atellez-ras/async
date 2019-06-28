@@ -125,7 +125,7 @@ class Pool implements ArrayAccess
         return $process;
     }
 
-    public function wait(?callable $intermediateCallback = null): array
+    public function wait($intermediateCallback = null): array
     {
         while ($this->inProgress) {
             foreach ($this->inProgress as $process) {
